@@ -320,6 +320,7 @@
 }
 
 @media (max-width: 550px) {
+
   .hero {
     padding-top: 70px;
   }
@@ -343,4 +344,87 @@
   .quote p {
     font-size: 1rem;
   }
+
+}
+
+/* ================================
+   MODO CLARO - PÁGINA SOBRE
+   ================================ */
+
+:global(html[data-theme='light']) .page {
+  background:
+    radial-gradient(circle at 20% 10%, rgba(126, 92, 180, 0.12), transparent 30%),
+    radial-gradient(circle at 80% 30%, rgba(212, 173, 90, 0.10), transparent 25%),
+    #f5f1e8;
+  color: #332b3f;
+}
+
+:global(html[data-theme='light']) .hero h1 {
+  color: #332b3f;
+}
+
+:global(html[data-theme='light']) .intro {
+  color: #665f68;
+}
+
+:global(html[data-theme='light']) .infoCard {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 252, 246, 0.98),
+      rgba(242, 236, 226, 0.98)
+    );
+  border-color: rgba(154, 104, 56, 0.35);
+  box-shadow: 0 15px 35px rgba(70, 50, 30, 0.10);
+}
+
+:global(html[data-theme='light']) .infoCard h2 {
+  color: #3d3345;
+}
+
+:global(html[data-theme='light']) .infoCard p {
+  color: #6f6870;
+}
+
+:global(html[data-theme='light']) .teacherCard {
+  background: #eee8dc;
+  border-color: rgba(154, 104, 56, 0.25);
+}
+
+:global(html[data-theme='light']) .teacherCard h3 {
+  color: #3d3345;
+}
+
+:global(html[data-theme='light']) .teacherCard p {
+  color: #716b70;
+}
+
+:global(html[data-theme='light']) .member {
+  background: rgba(255, 252, 246, 0.75);
+}
+
+:global(html[data-theme='light']) .member:hover {
+  background: rgba(239, 232, 220, 0.95);
+}
+
+:global(html[data-theme='light']) .member h3 {
+  color: #3d3345;
+}
+
+:global(html[data-theme='light']) .member p {
+  color: #716b70;
+}
+
+:global(html[data-theme='light']) .quote {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 252, 246, 0.98),
+      rgba(241, 235, 225, 0.98)
+    );
+  border-color: rgba(154, 104, 56, 0.30);
+}
+
+:global(html[data-theme='light']) .quote p {
+  color: #5d5260;
 }

@@ -585,3 +585,135 @@
     font-size: 0.9rem;
   }
 }
+
+html[data-theme='light'] .principal {
+  background: #f8f5ed;
+  color: #1e2438;
+}
+
+html[data-theme='light'] .sobreposicaoBanner {
+  background: linear-gradient(
+    to bottom,
+    rgba(248, 245, 237, 0.2),
+    rgba(248, 245, 237, 0.9)
+  );
+}
+
+html[data-theme='light'] .textoBanner h1 {
+  color: #1e2438;
+}
+
+html[data-theme='light'] .textoBanner p {
+  color: #5f6475;
+}
+
+html[data-theme='light'] .cartaoAtalho {
+  background: #fffdf7;
+  border-color: #ddd5c3;
+  color: #1e2438;
+}
+
+html[data-theme='light'] .cartaoAtalho:hover {
+  background: #f5f0e4;
+  border-color: #c59b27;
+}
+
+html[data-theme='light'] .cartaoRoxo {
+  background: #e9e3f5;
+}
+
+html[data-theme='light'] .cartaoRoxo:hover {
+  background: #ded5ee;
+}
+
+html[data-theme='light'] .cartaoAtalho h3 {
+  color: #1e2438;
+}
+
+html[data-theme='light'] .cartaoAtalho p {
+  color: #626878;
+}
+
+html[data-theme='light'] .projeto {
+  background: #eee9dc;
+  border-color: #d8cfbc;
+}
+
+html[data-theme='light'] .conteudoProjeto h2 {
+  color: #1e2438;
+}
+
+html[data-theme='light'] .textoProjeto p {
+  color: #626878;
+}
+
+html[data-theme='light'] .linhaProjeto {
+  background: #d1c7b2;
+}
+
+html[data-theme='light'] .cabecalhoTecnologias h2 {
+  color: #1e2438;
+}
+
+html[data-theme='light'] .cabecalhoTecnologias p {
+  color: #626878;
+}
+
+html[data-theme='light'] .itemTecnologia {
+  background: #fffdf7;
+  border-color: #ddd5c3;
+}
+
+html[data-theme='light'] .itemTecnologia:hover {
+  background: #f5f0e4;
+  border-color: #c59b27;
+}
+
+html[data-theme='light'] .itemTecnologia strong {
+  color: #1e2438;
+}
+
+html[data-theme='light'] .itemTecnologia small {
+  color: #777267;
+}
+
+html[data-theme='light'] .missao {
+  background: #e5dfd1;
+}
+
+html[data-theme='light'] .caixaMissao {
+  background: #f8f5ed;
+  border-color: #d1c7b2;
+}
+
+html[data-theme='light'] .lateralMissao {
+  border-color: #d1c7b2;
+}
+
+html[data-theme='light'] .conteudoMissao h2 {
+  color: #1e2438;
+}
+
+html[data-theme='light'] .conteudoMissao p {
+  color: #626878;
+}
+
+html[data-theme='light'] .botaoMissao {
+  color: #8a6919;
+  border-color: #c59b27;
+}
+
+html[data-theme='light'] .botaoMissao:hover {
+  background: #d4a94f;
+  color: #1e2438;
+}
+
+@media (max-width: 600px) {
+  html[data-theme='light'] .lateralMissao {
+    border-bottom-color: #d1c7b2;
+  }
+}
+
+html[data-theme='light'] .introducaoSecao h2 {
+  color: #1e2438;
+}
