@@ -343,9 +343,8 @@
   .quote p {
     font-size: 1rem;
   }
-}
-
-:global(html[data-theme='light']) .page {
+  
+  :global(html[data-theme='light']) .page {
   background:
     radial-gradient(circle at 20% 10%, rgba(126, 92, 180, 0.12), transparent 30%),
     radial-gradient(circle at 80% 30%, rgba(212, 173, 90, 0.10), transparent 25%),
