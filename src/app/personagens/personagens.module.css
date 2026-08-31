@@ -1,4 +1,3 @@
-/* Wrapper que ocupa toda a largura e altura da tela */
 .pageWrapper {
   width: 100%;
   min-height: 100vh;
@@ -41,10 +40,77 @@
   line-height: 1.6;
 }
 
+/* Abas Geral e Favoritos */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.tabButton {
+  background: rgba(18, 24, 46, 0.85);
+  border: 1px solid rgba(197, 155, 39, 0.4);
+  color: #e2d1a3;
+  padding: 0.75rem 1.75rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tabButton:hover {
+  border-color: #e2b742;
+  color: #f4ebcd;
+  transform: translateY(-2px);
+}
+
+.activeTab {
+  background: linear-gradient(135deg, #e2b742, #c59b27);
+  border-color: #e2b742;
+  color: #0b0f1e;
+  box-shadow: 0 0 15px rgba(197, 155, 39, 0.3);
+}
+
+.activeTab:hover {
+  color: #0b0f1e;
+}
+
+/* Grid dos personagens */
 .charactersGrid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 2rem;
+}
+
+/* Mensagem quando não existem favoritos */
+.emptyMessage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 30vh;
+  text-align: center;
+  background: rgba(18, 24, 46, 0.75);
+  border: 1px solid rgba(197, 155, 39, 0.35);
+  border-radius: 16px;
+  padding: 2.5rem;
+  margin: 1rem auto;
+  max-width: 600px;
+}
+
+.emptyMessage h2 {
+  font-family: 'Cinzel', serif;
+  color: #e2b742;
+  font-size: 1.6rem;
+  margin-bottom: 0.75rem;
+}
+
+.emptyMessage p {
+  color: #e2d1a3;
+  font-size: 1rem;
+  opacity: 0.85;
 }
 
 .loadingContainer,
@@ -111,6 +177,15 @@
 
   .pageSubtitle {
     font-size: 1rem;
+  }
+
+  .tabs {
+    gap: 0.5rem;
+  }
+
+  .tabButton {
+    padding: 0.65rem 1.25rem;
+    font-size: 0.9rem;
   }
 
   .charactersGrid {
