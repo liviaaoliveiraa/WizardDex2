@@ -713,3 +713,7 @@ html[data-theme='light'] .botaoMissao:hover {
     border-bottom-color: #d1c7b2;
   }
 }
+
+html[data-theme='light'] .introducaoSecao h2 {
+  color: #1e2438;
+}
