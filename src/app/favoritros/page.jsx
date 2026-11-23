@@ -8,7 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Header from '@/components/Header/Header';
 import CardPersonagens from '@/components/Personagens/Card/CardPersonagens';
 import ModalPersonagens from '@/components/Personagens/Modal/ModalPersonagens';
-import styles from './personagens.module.css';
+import styles from './favoritos.module.css';
 
 export default function PersonagensPage() {
   const [characters, setCharacters] = useState([]);
