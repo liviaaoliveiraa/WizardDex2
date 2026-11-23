@@ -1,13 +1,13 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import Header from '@/components/Header/Header';
 import CardPersonagens from '@/components/Personagens/Card/CardPersonagens';
 import ModalPersonagens from '@/components/Personagens/Modal/ModalPersonagens';
+import { buscarPersonagens } from '@/lib/personagens';
 import styles from './personagens.module.css';
 
 export default function PersonagensPage() {
@@ -38,15 +38,12 @@ export default function PersonagensPage() {
 
                 setLoading(true);
 
-                const response = await axios.get(
-                    'https://hp-api.onrender.com/api/characters'
-                );
-
-                setCharacters(response.data);
+                const personagens = await buscarPersonagens();
+                setCharacters(personagens);
 
                 localStorage.setItem(
                     'personagens',
-                    JSON.stringify(response.data)
+                    JSON.stringify(personagens)
                 );
             } catch (err) {
                 setError(

@@ -51,7 +51,12 @@ export default function CharacterModal({ character, onClose }) {
               <strong>Ator/Atriz:</strong> {character.actor || 'Desconhecido'}
             </p>
             <p className={styles.detailItem}>
-              <strong>Situação:</strong> {character.alive ? '🟢 Vivo(a)' : '💀 Falecido(a)'}
+              <strong>Situação:</strong>{' '}
+              {character.alive == null
+                ? 'Desconhecida'
+                : character.alive
+                  ? '🟢 Vivo(a)'
+                  : '💀 Falecido(a)'}
             </p>
           </div>
         </div>
